@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/CSS_encryptador.css" rel="stylesheet"> 
+    <title>Encriptador Texto Alura</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Logo de la pagina-->
+        
+            <div class="logo">
+                <img src="img/Vector.png" class="vector" alt="Logo Alura">
+             </div>
+    
+
+            <div class="Input">
+                <input class="input" type="text" placeholder="Ingrese el texto aqui" id="Txt_input" autofocus>
+             </div>
+             
+        <!--Rectangulo y muñeco-->
+        <div class="Rectangulo">
+            <textarea class="Txt_area" id="Area_Txt"> </textarea>
+            <img class="Munheco" src="img/Muñeco.png" alt="Munheco Alura" id="munheco_img">
+
+            <div class="Frame5">
+                <spam class="Ningun_Text" id="Text_ningun">Ningún mensaje fue encontrado.</spam>
+                <spam class="Ingresa_Text" id="Text_ingresa">Ingresa el texto que desees encriptar o desencriptar.</spam>
+
+                <button class="Copiar" id="copiar_Btn">
+                    Copiar
+                </button>
+            </div>
+
+        </div>
+
+      
+
+        <div class="Frame1">
+            <img class="Circulo_Ex" src="img/bi_exclamation-circle-fill.png" alt="Imagen signo de exclamacion alura">
+            <spam class="Text_Spam">Solo letras minúsculas y sin acentos</spam> 
+            <spam class="Text_Spam">|| Hecho por Joel Matos</spam>
+        </div>
+
+        <div class="Frame3">
+            <button class="btn_Encriptar" id="Encriptador_btn">
+                Encriptar
+            </button>
+            <button class="btn_Desencriptar" id="Desencriptar_btn">
+                Desencriptar
+            </button>
+        </div>
+
+    </div>
+
+<script src="JS/JS_encryptador.js"></script>
+
+</body>
+
+</html>

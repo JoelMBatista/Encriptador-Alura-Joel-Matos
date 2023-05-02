@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;800;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+.container {
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #F3F5FC;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: hidden;
+
+}
+
+
+/*div logo para el vector*/
+.logo {
+    width: 100%;
+    height: 6%;
+}
+
+/*imagen de alura*/
+.vector {
+    position: absolute;
+    padding: 1% 0 0 1%;
+}
+
+/* Este es el div retangulo con el text area y el muñeco*/
+.Rectangulo {
+    position: absolute;
+    width: 20%;
+    min-width: 300px;
+    height: 90%;
+    left: 73%;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+/* Muñeco */
+.Munheco {
+    position: absolute;
+    width: 90%;
+    top: 20%;
+    left: 9%;
+    
+}
+
+/*Textaera*/
+.Txt_area {
+   visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    padding: 5% 0 0 2%;
+    text-align: left;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #495057;
+}
+
+/*Fin Div rectangulo*/
+
+/*DIv Frame5 con Boton copiar y los textos*/
+.Frame5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    bottom: 0%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+
+/*Spam ingresa texto*/
+.Ingresa_Text {
+    /* Ingresa el texto que desees encriptar o desencriptar. */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+}
+
+/*Spam ningun texto*/
+.Ningun_Text {
+    /* Ningún mensaje fue encontrado */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #343A40;
+}
+
+/*boton copiar*/
+.Copiar {
+    visibility: hidden;
+    padding: 24px;
+    position: absolute;
+    width: 90%;
+    height: 67px;
+    bottom: 5%;
+    border-radius: 24px;
+    border: solid 1px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    z-index: 1;
+
+
+}
+.Copiar:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #0A3871;
+    color: #fff;
+}
+
+/* Termina aqui */
+
+/*Input DIV*/
+.Input {
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+}
+
+/* Input Text */
+.input {
+    height: auto;
+    font-size: 40px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400px;
+    padding: 1%;
+    color: rgba(10, 56, 113, 1);
+    background-color: #F3F5FC;
+    
+}
+
+
+input::placeholder {
+    color: rgba(10, 56, 113, 1);
+}
+
+input:focus {
+    outline: none;
+}
+
+.red{
+    background: rgba(255, 0, 0, 0.589);
+}
+
+/* Fin Input Text */
+
+/* desde aqui es el Div Frame1 contiene el circulo y las letras */
+.Frame1 {
+    width: 80%;
+    bottom: 17%;
+    padding-left: 11%;
+    flex-direction: row;
+    position: absolute;
+  
+}
+
+/*imagen circulo*/
+.Circulo_Ex {
+    width: 16px;
+    height: 16px;
+}
+
+/*texto*/
+.Text_Spam {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+}
+
+/* Fin circulo y letras */
+
+/* desde aqui es el Div Frame3 contiene los botones encriptar y desencriptar*/
+.Frame3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    padding: 0 0 0 10%;
+    bottom: 5%;
+}
+
+/*Boton encriptar*/
+.btn_Encriptar {
+    width: 20%;
+    height: 67px;
+    margin-right: 10px;
+    background: #0A3871;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+ 
+}
+
+.btn_Encriptar:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #D8DFE8;
+    color:  #0A3871;
+    border: solid 1px #0A3871;
+}
+
+/*Boton desencriptar*/
+.btn_Desencriptar {
+    width: 20%;
+    height: 67px;
+    background: #D8DFE8;
+    border-radius: 20px;
+    border: solid 1px #0A3871;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #0A3871;
+}
+
+.btn_Desencriptar:hover{
+    transition: 1s;
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #0A3871;
+    color: #fff;
+}
+
+
+/*Fin Botones encriptar y desencriptar*/
+
+/*Responsive design*/
+@media screen and (max-width: 1202px) {
+    .Rectangulo {
+        left: 60%;
+    }
+
+    .Frame3{
+        bottom: 5%;
+    }
+}
+
+/*Tablet*/
+@media screen and (max-width: 780px) {
+    .Rectangulo {
+        width: 40%;
+        left: 55%;
+        height: 80%;
+        top: 13%;
+    }
+
+    .Frame3 {
+        left: 2%;
+    }
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 660px) {
+
+    .Input {
+        color: #495057;
+        width: 100%;
+        height: 35px;
+        margin: 0%;
+        top: 15%;
+    }
+
+    .input {
+        width: 90%;
+        font-size: 30px;
+        margin: 0%;
+        padding: 2%;
+        overflow-x: visible;
+
+    }
+
+    .Munheco {
+        visibility: hidden;
+    }
+
+    .Rectangulo {
+        position: absolute;
+        width: 90%;
+        left: 0;
+        height: 30%;
+        margin-left: 3%;
+        margin-right: 2%;
+        top: 65%;
+    }
+
+ 
+
+    .Frame3 {
+       
+        bottom: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*Boton encriptar*/
+    .btn_Encriptar {
+      width: 80%;
+      height: 50px;
+      margin-bottom: 5px;
+      font-size: 18px;
+
+    }
+
+    /*Boton desencriptar*/
+    .btn_Desencriptar {
+        width: 80%;
+        height: 50px;
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    .Frame5{
+        bottom: 30%;
+    }
+
+    .Copiar{
+        width: 80%;
+        height: 50px;
+        font-size: 18px;
+        padding: 3%;
+        bottom: -90%;
+
+    }
+
+    /*Spam ingresa texto*/
+    .Ingresa_Text {
+        /* Ingresa el texto que desees encriptar o desencriptar. */
+        font-size: 14px;
+        width: 70%;
+    }
+
+    /*Spam ningun texto*/
+    .Ningun_Text {
+        width: 70%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Frame3 {
+        bottom: 40%;
+    }
+
+    .Frame1 {
+        bottom: 58%;
+
+    }
+}
+
